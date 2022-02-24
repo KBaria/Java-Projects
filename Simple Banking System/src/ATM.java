@@ -82,7 +82,7 @@ public class ATM {
 			choice = sc.nextInt();
 
 			if (choice < 1 || choice > 5) {
-				System.out.println("You better enter a goddamn valid number!");
+				System.out.println("enter a valid number!");
 			}
 
 		} while (choice < 1 || choice > 5);
@@ -171,7 +171,7 @@ public class ATM {
 			if (amount < 0) {
 				System.out.println("The amount to transfer cannot be negativge!");
 			} else if (amount > acctBal) {
-				System.out.println("Transfer amount exceeded!, you aint got that much money in your account");
+				System.out.println("Transfer amount exceeded!");
 			}
 		} while (amount < 0 || amount > acctBal);
 
@@ -211,7 +211,7 @@ public class ATM {
 			if (amount < 0) {
 				System.out.println("The amount to withdraw cannot be negativge!");
 			} else if (amount > acctBal) {
-				System.out.println("Withdraw amount exceeded!, you aint got that much money in your account");
+				System.out.println("Withdraw amount exceeded!");
 			}
 		} while (amount < 0 || amount > acctBal);
 
